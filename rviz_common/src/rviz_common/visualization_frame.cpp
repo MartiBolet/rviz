@@ -166,6 +166,11 @@ VisualizationFrame::~VisualizationFrame()
   delete panel_factory_;
 }
 
+rviz_common::RenderPanel * VisualizationFrame::getRenderPanel()
+{
+  return render_panel_;
+}
+
 rviz_rendering::RenderWindow * VisualizationFrame::getRenderWindow()
 {
   return render_panel_->getRenderWindow();
